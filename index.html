@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./icon-font/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <img id="image-bg" src="./image/clear.jpg" alt="" />
+      <div class="content">
+        <h1 id="location" class="location">DONETSK</h1>
+        <h3 id="date" class="date">Thusrday, February 22, 2024</h3>
+        <div id="temperature-big" class="temperature-big">0°C</div>
+        <div class="divider"></div>
+        <div class="weather-type">
+          <img id="weather-icon" src="./image/icons/types/clear.svg" alt="" />
+          <div id="weather-type">Clear</div>
+        </div>
+        <div class="footer">
+          <div>
+            <i class="icon-temperature"></i>
+            <span id="temperature">0°C</span>
+          </div>
+          <div>
+            <i class="icon-humidity"></i>
+            <span id="humidity">55%</span>
+          </div>
+          <div>
+            <i class="icon-rain-probability"></i>
+            <span id="rain-probability">20%</span>
+          </div>
+        </div>
+      </div>
+      <button class="overlay-btn" id="overlay-btn">
+        <i class="icon-caret-up"></i>
+      </button>
+      <div class="overlay-locations" id="overlay-locations">
+        <button data-city="Donetsk">Donetsk</button>
+        <button data-city="Moscow">Moscow</button>
+        <button data-city="Makeevka">Makeevka</button>
+        <button data-city="Paris">Paris</button>
+        <button data-city="Rostov">Rostov</button>
+        <button data-city="Rome">Rome</button>
+        <button data-city="Novosibirsk">Novosibirsk</button>
+      </div>
+      <div class="preloader" id="preloader">
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./moment-with-locales.min.js"></script>
+  </body>
+</html>
